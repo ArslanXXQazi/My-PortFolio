@@ -28,7 +28,7 @@ class WhiteNormalText extends StatelessWidget {
         text ?? "",
         textAlign: textAlign ??
             TextAlign.center, // Default to center, override if provided
-        style: GoogleFonts.poppins(
+        style: GoogleFonts.aBeeZee(
           fontSize: fontSize ?? 16,
           fontWeight: fontWeight ?? FontWeight.w500,
           color: textColor ?? Colors.black,

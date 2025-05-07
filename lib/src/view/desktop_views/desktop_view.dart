@@ -79,41 +79,46 @@ class DesktopView extends StatelessWidget {
         Expanded(
           flex: 90,
             child: Container(
-              color: Colors.pinkAccent,
               child: Row(children: [
                 Expanded(
                   flex: 65,
                     child: Container(
-                  color: Colors.yellow,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                        WhiteNormalText(
-                          text: "Hello My Name Is Arslan Qazi",
-                          fontWeight: FontWeight.w700,
-                        ),
-                        SizedBox(height: height*.03),
-                        WhiteNormalText(
-                          text: "I am a",
-                          fontWeight: FontWeight.w700,
-                        ),
-                          SizedBox(height: height*.01),
-                        WhiteNormalText(
-                          text: "Full Stack Developer",
-                          fontWeight: FontWeight.w700,
-                        ),
-                          SizedBox(height: height*.03),
-                        WhiteNormalText(
-                          text: "I am a Full Stack Developer with a strong focus on Flutter for building cross-platform mobile applications. I handle both frontend and backend development, creating complete app solutions from user interface to server-side logic. With experience in modern tools and frameworks, I aim to deliver smooth, responsive, and efficient apps tailored to user needs.",
-                          fontWeight: FontWeight.w700,
-                        ),
-                          SizedBox(height: height*.03),
-                          redButton(
-                            onpress: (){},
-                            text: "Hire Me",
-                            width: 200,
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: width*.01),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                          WhiteNormalText(
+                            text: "Hello My Name Is Arslan Qazi",
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
                           ),
-                      ],),
+                          SizedBox(height: height*.03),
+                          WhiteNormalText(
+                            text: "I am a",
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                          ),
+                            SizedBox(height: height*.01),
+                          WhiteNormalText(
+                            text: "Full Stack Developer",
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                          ),
+                            SizedBox(height: height*.03),
+                          WhiteNormalText(
+                            text: "I am a Full Stack Developer with a strong focus on Flutter for building cross-platform mobile applications. I handle both frontend and backend development, creating complete app solutions from user interface to server-side logic. With experience in modern tools and frameworks, I aim to deliver smooth, responsive, and efficient apps tailored to user needs.",
+                            fontWeight: FontWeight.w500,
+                            fontSize: 18,
+                          ),
+                            SizedBox(height: height*.05),
+                            redButton(
+                              onpress: (){},
+                              text: "Hire Me",
+                              width: width*.2,
+                            ),
+                        ],),
+                      ),
                 )),
                 Expanded(
                   flex: 35,
