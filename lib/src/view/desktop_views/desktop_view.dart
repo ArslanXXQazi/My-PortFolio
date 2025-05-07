@@ -9,12 +9,15 @@ class DesktopView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final height=MediaQuery.sizeOf(context).height;
-    final width=MediaQuery.sizeOf(context).width;
+    final screenHeight=MediaQuery.sizeOf(context).height;
+    final screenWidth=MediaQuery.sizeOf(context).width;
 
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(children: [
+
+        //============>>Home View Start
+
         Expanded(
           flex: 10,
             child: Container(
@@ -27,7 +30,7 @@ class DesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                   Icon(Icons.home),
-                  SizedBox(width: width*.01,),
+                  SizedBox(width: screenWidth*.01,),
                   WhiteNormalText(
                     onTap: (){},
                     text: "Home",
@@ -37,7 +40,7 @@ class DesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.person),
-                    SizedBox(width: width*.01,),
+                    SizedBox(width: screenWidth*.01,),
                     WhiteNormalText(
                       onTap: (){},
                       text: "About",
@@ -47,7 +50,7 @@ class DesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.abc_outlined),
-                    SizedBox(width: width*.01,),
+                    SizedBox(width: screenWidth*.01,),
                     WhiteNormalText(
                       onTap: (){},
                       text: "Services",
@@ -57,7 +60,7 @@ class DesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.person),
-                    SizedBox(width: width*.01,),
+                    SizedBox(width: screenWidth*.01,),
                     WhiteNormalText(
                       onTap: (){},
                       text: "Portfolio",
@@ -67,7 +70,7 @@ class DesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.contact_mail),
-                    SizedBox(width: width*.01,),
+                    SizedBox(width: screenWidth*.01,),
                     WhiteNormalText(
                       onTap: (){},
                       text: "Contact",
@@ -81,10 +84,10 @@ class DesktopView extends StatelessWidget {
             child: Container(
               child: Row(children: [
                 Expanded(
-                  flex: 65,
+                  flex: 70,
                     child: Container(
                       child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: width*.01),
+                        padding: EdgeInsets.symmetric(horizontal: screenWidth*.01),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -103,36 +106,36 @@ class DesktopView extends StatelessWidget {
                              textColor: Colors.redAccent,
                            ),
                          ],),
-                          SizedBox(height: height*.03),
+                          SizedBox(height: screenHeight*.03),
                           WhiteNormalText(
                             text: "I am a",
                             fontSize: 25,
                             fontWeight: FontWeight.w700,
                           ),
-                            SizedBox(height: height*.01),
+                            SizedBox(height: screenHeight*.01),
                           WhiteNormalText(
                             text: "Full Stack Developer",
                             fontWeight: FontWeight.w700,
                             fontSize: 25,
                             textColor: Colors.redAccent,
                           ),
-                            SizedBox(height: height*.03),
+                            SizedBox(height: screenHeight*.03),
                           WhiteNormalText(
                             text: "I am a Full Stack Developer with a strong focus on Flutter for building cross-platform mobile applications. I handle both frontend and backend development, creating complete app solutions from user interface to server-side logic. With experience in modern tools and frameworks, I aim to deliver smooth, responsive, and efficient apps tailored to user needs.",
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
                           ),
-                            SizedBox(height: height*.05),
+                            SizedBox(height: screenHeight*.05),
                             redButton(
                               onpress: (){},
                               text: "Hire Me",
-                              width: width*.2,
+                              width: screenWidth*.2,
                             ),
                         ],),
                       ),
                 )),
                 Expanded(
-                  flex: 35,
+                  flex: 30,
                     child: Container(
                       alignment: Alignment.center,
                       child: Stack(
@@ -140,8 +143,8 @@ class DesktopView extends StatelessWidget {
                         children: [
                           // Circular background (yellow/orange)
                           CircleAvatar(
-                            radius: width*.11,
-                            backgroundColor: Colors.redAccent,
+                            radius: screenWidth*.11,
+                            backgroundImage: AssetImage("assets/arslan.jpeg"),
                           ),
                           // Four red corner arrows
                           Positioned(
@@ -206,6 +209,16 @@ class DesktopView extends StatelessWidget {
                 ),
               ],),
             )),
+
+        //============>>Home View End
+
+        SizedBox(height: screenHeight*.02),
+
+
+        //============>> About View Start
+
+        
+        
       ],),
     );
   }
