@@ -83,7 +83,25 @@ class DesktopView extends StatelessWidget {
                   flex: 65,
                     child: Container(
                   color: Colors.red,
-                      child: Column(children: [
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                        WhiteNormalText(
+                          text: "Hello My Name Is Arslan Qazi",
+                          fontWeight: FontWeight.w700,
+                        ),
+                        WhiteNormalText(
+                          text: "I am a",
+                          fontWeight: FontWeight.w700,
+                        ),
+                        WhiteNormalText(
+                          text: "Full Stack Developer",
+                          fontWeight: FontWeight.w700,
+                        ),
+                        WhiteNormalText(
+                          text: "I am a Full Stack Developer with a strong focus on Flutter for building cross-platform mobile applications. I handle both frontend and backend development, creating complete app solutions from user interface to server-side logic. With experience in modern tools and frameworks, I aim to deliver smooth, responsive, and efficient apps tailored to user needs.",
+                          fontWeight: FontWeight.w700,
+                        ),
                         
                       ],),
                 )),
