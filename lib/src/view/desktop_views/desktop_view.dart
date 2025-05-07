@@ -328,6 +328,8 @@ class DesktopView extends StatelessWidget {
                               ],),
                             ],),
 
+
+
                           ],),
                         )),
                         Expanded(
@@ -401,6 +403,24 @@ class DesktopView extends StatelessWidget {
                                ],
                              ),
                             )),
+                      ],),
+                      SizedBox(height: screenHeight*.03),
+                      Row(children: [
+                        redButton(
+                          onpress: (){},
+                          text: "Download-cv",
+                          buttonColor: Colors.red,
+                          height: screenHeight*.06,
+                          width: screenWidth*.15,
+                        ),
+                        SizedBox(width: screenWidth*.02,),
+                        redButton(
+                          onpress: (){},
+                          text: "Download-cv",
+                          buttonColor: Colors.red,
+                          height: screenHeight*.06,
+                          width: screenWidth*.1,
+                        )
                       ],),
                       SizedBox(height: screenHeight*.06),
 
