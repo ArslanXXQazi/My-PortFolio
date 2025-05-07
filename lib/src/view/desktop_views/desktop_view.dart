@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/controller/components/custom_text.dart';
+import 'package:portfolio/src/controller/components/percentange.dart';
 
 import '../../controller/components/custom_button.dart' show redButton;
 
@@ -258,14 +259,11 @@ class DesktopView extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                       ),
                       SizedBox(height: screenHeight*.06),
-
                       Row(children: [
                         Expanded(
                           flex: 30,
                             child: Container(
                           child: Column(children: [
-                            Row(
-                             children: [
                             Row(children: [
                               Row(children: [
                                 WhiteNormalText(
@@ -281,161 +279,130 @@ class DesktopView extends StatelessWidget {
                                 ),
                               ],),
                             ],),
-
-                           ],),
-                            Row(
-                              children: [
-                                Row(children: [
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "Website ",
-                                      fontSize: 20,
-                                    ),
-                                  ],),
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "www.domain.com",
-                                      fontSize: 18,
-                                      textColor: Colors.grey,
-                                    ),
-                                  ],),
-                                ],),
+                            SizedBox(height: screenHeight*.03,),
+                            Row(children: [
+                              Row(children: [
+                                WhiteNormalText(
+                                  text: "Website ",
+                                  fontSize: 20,
+                                ),
                               ],),
-
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Row(children: [
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "Degree : ",
-                                      fontSize: 20,
-                                    ),
-                                  ],),
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "BSCS",
-                                      fontSize: 18,
-                                      textColor: Colors.grey,
-                                    ),
-                                  ],),
-                                ],),
-
+                              Row(children: [
+                                WhiteNormalText(
+                                  text: "www.domain.com",
+                                  fontSize: 18,
+                                  textColor: Colors.grey,
+                                ),
                               ],),
-                            Row(
-                              children: [
-                                Row(children: [
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "City : ",
-                                      fontSize: 20,
-                                    ),
-                                  ],),
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "Dera Ismail Khan",
-                                      fontSize: 18,
-                                      textColor: Colors.grey,
-                                    ),
-                                  ],),
-                                ],),
-                                SizedBox(width: screenWidth*.1,),
-                                Row(children: [
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "Freelance : ",
-                                      fontSize: 20,
-                                    ),
-                                  ],),
-                                  Row(children: [
-                                    WhiteNormalText(
-                                      text: "Avaliable",
-                                      fontSize: 18,
-                                      textColor: Colors.grey,
-                                    ),
-                                  ],),
-                                ],)
+                            ],),
+                            SizedBox(height: screenHeight*.03,),
+                            Row(children: [
+                              Row(children: [
+                                WhiteNormalText(
+                                  text: "Degree : ",
+                                  fontSize: 20,
+                                ),
                               ],),
-
-
+                              Row(children: [
+                                WhiteNormalText(
+                                  text: "BSCS",
+                                  fontSize: 18,
+                                  textColor: Colors.grey,
+                                ),
+                              ],),
+                            ],),
+                            SizedBox(height: screenHeight*.03,),
+                            Row(children: [
+                              Row(children: [
+                                WhiteNormalText(
+                                  text: "City : ",
+                                  fontSize: 20,
+                                ),
+                              ],),
+                              Row(children: [
+                                WhiteNormalText(
+                                  text: "Dera Ismail Khan",
+                                  fontSize: 18,
+                                  textColor: Colors.grey,
+                                ),
+                              ],),
+                            ],),
 
                           ],),
                         )),
-
-
-
                         Expanded(
                           flex: 30,
                             child: Container(
                           child: Column(children: [
                             Row(children: [
-                              Row(children: [
-                                WhiteNormalText(
-                                  text: "Age ",
-                                  fontSize: 20,
-                                ),
-                              ],),
-                              Row(children: [
-                                WhiteNormalText(
-                                  text: "29",
-                                  fontSize: 18,
-                                  textColor: Colors.grey,
-                                ),
-                              ],),
+                              WhiteNormalText(
+                                text: "Age : ",
+                                fontSize: 20,
+                              ),
+                              WhiteNormalText(
+                                text: "29",
+                                fontSize: 18,
+                                textColor: Colors.grey,
+                              ),
                             ],),
+                            SizedBox(height: screenHeight*.03,),
                             Row(children: [
-                              Row(children: [
-                                WhiteNormalText(
-                                  text: "Email : ",
-                                  fontSize: 20,
-                                ),
-                              ],),
-                              Row(children: [
-                                WhiteNormalText(
-                                  text: "arslanqazi199@gmail.com",
-                                  fontSize: 18,
-                                  textColor: Colors.grey,
-                                ),
-                              ],),
+                              WhiteNormalText(
+                                text: "Email : ",
+                                fontSize: 20,
+                              ),
+                              WhiteNormalText(
+                                text: "arslanqazi199@gmail.com",
+                                fontSize: 18,
+                                textColor: Colors.grey,
+                              ),
                             ],),
+                            SizedBox(height: screenHeight*.03,),
                             Row(children: [
-                              Row(children: [
-                                WhiteNormalText(
-                                  text: "Phone : ",
-                                  fontSize: 20,
-                                ),
-                              ],),
-                              Row(children: [
-                                WhiteNormalText(
-                                  text: "+923483425529",
-                                  fontSize: 18,
-                                  textColor: Colors.grey,
-                                ),
-                              ],),
-                            ],)
-
+                              WhiteNormalText(
+                                text: "Phone : ",
+                                fontSize: 20,
+                              ),
+                              WhiteNormalText(
+                                text: "+923483425529",
+                                fontSize: 18,
+                                textColor: Colors.grey,
+                              ),
+                            ],),
+                            SizedBox(height: screenHeight*.03,),
+                            Row(children: [
+                              WhiteNormalText(
+                                text: "Freelance : ",
+                                fontSize: 20,
+                              ),
+                              WhiteNormalText(
+                                text: "Avaliable",
+                                fontSize: 18,
+                                textColor: Colors.grey,
+                              ),
+                            ],),
                           ],),
                         )),
-
-
-
-
-
-
-
-
-
-
-
-
 
                         Expanded(
                           flex: 40,
                             child: Container(
-                              height: 100,
-                              color: Colors.red,
+                             child: Column(
+                               children: [
+
+                                 Percentange(name: "HTML", percantage: 90, value: .9),
+                                 SizedBox(height: screenHeight*.03,),
+                                 Percentange(name: "CSS", percantage: 95, value: .95),
+                                 SizedBox(height: screenHeight*.03,),
+                                 Percentange(name: "BOOTSTRAP", percantage: 90, value: .9),
+                                 SizedBox(height: screenHeight*.03,),
+                                 Percentange(name: "WORLD PRESS", percantage: 80, value: .8),
+
+                               ],
+                             ),
                             )),
-                      ],)
+                      ],),
+                      SizedBox(height: screenHeight*.06),
 
 
                     ],
