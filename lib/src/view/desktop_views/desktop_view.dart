@@ -5,14 +5,21 @@ import 'package:portfolio/src/controller/components/services_container.dart';
 
 import '../../controller/components/custom_button.dart' show redButton;
 
-class DesktopView extends StatelessWidget {
+class DesktopView extends StatefulWidget {
   const DesktopView({super.key});
 
+  @override
+  State<DesktopView> createState() => _DesktopViewState();
+}
+
+class _DesktopViewState extends State<DesktopView> {
   @override
   Widget build(BuildContext context) {
 
     final screenHeight=MediaQuery.sizeOf(context).height;
     final screenWidth=MediaQuery.sizeOf(context).width;
+
+    int select = 0;
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -39,7 +46,10 @@ class DesktopView extends StatelessWidget {
                     Icon(Icons.home),
                     SizedBox(width: screenWidth*.01,),
                     WhiteNormalText(
-                      onTap: (){},
+                      onTap: (){
+                        select=1;
+                        setState(() {});
+                      },
                       text: "Home",
                     )
                   ],),
@@ -755,7 +765,7 @@ class DesktopView extends StatelessWidget {
                       )
                       //============>>Services View Start
 
-                      
+
 
                     ],
                   ),
