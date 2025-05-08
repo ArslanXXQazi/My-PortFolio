@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/controller/components/custom_text.dart';
 import 'package:portfolio/src/controller/components/percentange.dart';
+import 'package:portfolio/src/controller/components/services_container.dart';
 
 import '../../controller/components/custom_button.dart' show redButton;
 
@@ -681,6 +682,8 @@ class DesktopView extends StatelessWidget {
                      ),
 
                       //============>>About View End
+
+                      //============>>Services View Start
                       Container(
                         height: screenHeight*1,
                         child: Column(
@@ -696,10 +699,63 @@ class DesktopView extends StatelessWidget {
                             color: Colors.red,
                           ),
                           SizedBox(height: screenHeight*.06),
+                          Row(children: [
+                            Expanded(
+                              child: ServicesContainer(
+                                  icon: Icons.phone_android,
+                                  title: "Web-Design",
+                                  subTitle: "I create responsive and modern website using HTML, CSS, and JavaScript"
+                              ),
+                            ),
+                            SizedBox(width: screenWidth*.02,),
+                            Expanded(
+                              child: ServicesContainer(
+                                  icon: Icons.phone_android,
+                                  title: "Web-Design",
+                                  subTitle: "I create responsive and modern website using HTML, CSS, and JavaScript"
+                              ),
+                            ),
+                            SizedBox(width: screenWidth*.02,),
+                            Expanded(
+                              child: ServicesContainer(
+                                  icon: Icons.phone_android,
+                                  title: "Web-Design",
+                                  subTitle: "I create responsive and modern website using HTML, CSS, and JavaScript"
+                              ),
+                            ),
+                          ],),
+                            SizedBox(height: screenHeight*.03),
+                            Row(children: [
+                              Expanded(
+                                child: ServicesContainer(
+                                    icon: Icons.phone_android,
+                                    title: "Web-Design",
+                                    subTitle: "I create responsive and modern website using HTML, CSS, and JavaScript"
+                                ),
+                              ),
+                              SizedBox(width: screenWidth*.02,),
+                              Expanded(
+                                child: ServicesContainer(
+                                    icon: Icons.phone_android,
+                                    title: "Web-Design",
+                                    subTitle: "I create responsive and modern website using HTML, CSS, and JavaScript"
+                                ),
+                              ),
+                              SizedBox(width: screenWidth*.02,),
+                              Expanded(
+                                child: ServicesContainer(
+                                    icon: Icons.phone_android,
+                                    title: "Web-Design",
+                                    subTitle: "I create responsive and modern website using HTML, CSS, and JavaScript"
+                                ),
+                              ),
+                            ],),
+                            SizedBox(height: screenHeight*.06),
                         ],),
                       )
                       //============>>Services View Start
 
+                      
 
                     ],
                   ),
