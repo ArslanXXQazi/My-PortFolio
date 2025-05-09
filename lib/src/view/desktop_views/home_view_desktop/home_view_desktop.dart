@@ -29,15 +29,15 @@ class HomeViewDesktop extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        WhiteNormalText(
+                       WhiteNormalText(
                           text: "Hello My Name Is",
                           fontWeight: FontWeight.w700,
-                          fontSize: 25,
+                          fontSize: 30,
                         ),
                         WhiteNormalText(
                           text: " Arslan Qazi",
                           fontWeight: FontWeight.w700,
-                          fontSize: 25,
+                          fontSize: 30,
                           textColor: Colors.redAccent,
                         ),
                       ],
@@ -45,14 +45,14 @@ class HomeViewDesktop extends StatelessWidget {
                     SizedBox(height: screenHeight * .03),
                     WhiteNormalText(
                       text: "I am a",
-                      fontSize: 25,
+                      fontSize: 30,
                       fontWeight: FontWeight.w700,
                     ),
                     SizedBox(height: screenHeight * .01),
                     WhiteNormalText(
                       text: "Full Stack Developer",
                       fontWeight: FontWeight.w700,
-                      fontSize: 25,
+                      fontSize: 30,
                       textColor: Colors.redAccent,
                     ),
                     SizedBox(height: screenHeight * .03),

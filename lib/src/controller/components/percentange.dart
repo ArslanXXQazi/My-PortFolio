@@ -35,7 +35,7 @@ class Percentange extends StatelessWidget {
       ClipRRect(
         borderRadius: BorderRadius.circular(20),
         child: LinearProgressIndicator(
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.grey.shade200,
           color: Colors.red,
           value: value,
           minHeight: screenHeight*.01,

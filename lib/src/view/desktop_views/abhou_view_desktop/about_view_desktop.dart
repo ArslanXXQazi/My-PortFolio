@@ -251,7 +251,7 @@ class AboutViewDesktop extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: screenHeight * .03),
+          SizedBox(height: screenHeight * .06),
           Row(
             children: [
               Expanded(

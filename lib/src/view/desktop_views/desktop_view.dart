@@ -782,6 +782,7 @@ import 'package:portfolio/src/controller/components/custom_text.dart';
 import 'package:portfolio/src/controller/components/percentange.dart';
 import 'package:portfolio/src/controller/components/services_container.dart';
 import 'package:portfolio/src/view/desktop_views/abhou_view_desktop/about_view_desktop.dart';
+import 'package:portfolio/src/view/desktop_views/contact_view_desktop/contact_view_desktop.dart';
 import 'package:portfolio/src/view/desktop_views/home_view_desktop/home_view_desktop.dart';
 import 'package:portfolio/src/view/desktop_views/services_view_desktop/services_view_desktop.dart';
 import '../../controller/components/custom_button.dart' show RedButton;
@@ -799,6 +800,8 @@ class _DesktopViewState extends State<DesktopView> {
   final GlobalKey _homeKey = GlobalKey();
   final GlobalKey _aboutKey = GlobalKey();
   final GlobalKey _servicesKey = GlobalKey();
+  final GlobalKey _portfolioKey = GlobalKey();
+  final GlobalKey _contactKey = GlobalKey();
 
   void _scrollToSection(GlobalKey key) {
     final context = key.currentContext;
@@ -870,7 +873,7 @@ class _DesktopViewState extends State<DesktopView> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.abc_outlined, color: select == 3 ? Colors.red : Colors.black),
+                        Icon(Icons.segment_outlined, color: select == 3 ? Colors.red : Colors.black),
                         SizedBox(width: screenWidth * .01),
                         WhiteNormalText(
                           onTap: () {
@@ -901,10 +904,15 @@ class _DesktopViewState extends State<DesktopView> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.contact_mail, color: select == 5 ? Colors.red : Colors.black),
+                        Icon(Icons.contact_mail_rounded, color: select == 5 ? Colors.red : Colors.black),
                         SizedBox(width: screenWidth * .01),
                         WhiteNormalText(
-                          onTap: () {},
+                          onTap: () {
+                            setState(() {
+                              select=5;
+                            });
+                            _scrollToSection(_contactKey);
+                          },
                           text: "Contact",
                           textColor: select == 5 ? Colors.red : Colors.black,
                           fontWeight: select == 5 ? FontWeight.bold : FontWeight.normal,
@@ -939,6 +947,11 @@ class _DesktopViewState extends State<DesktopView> {
                       //============>>Services View Start
                       ServicesViewDesktop(selectKey: _servicesKey),
                       //============>>Services View End
+
+                      //============>>Contact View Start
+                      ContactViewDesktop(selectKey: _contactKey,),
+                      //============>>Contact View End
+
                     ],
                   ),
                 ),
