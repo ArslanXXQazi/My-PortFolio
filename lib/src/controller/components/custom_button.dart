@@ -6,7 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class redButton extends StatelessWidget {
+class RedButton extends StatelessWidget {
   final Color? buttonColor;
   final Color? textColor;
   final String? text;
@@ -19,7 +19,7 @@ class redButton extends StatelessWidget {
   final TextStyle? textStyle;
   final Color? borderColor;
 
-  const redButton({
+  const RedButton({
     super.key,
     this.borderColor,
     this.buttonColor,
